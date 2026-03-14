@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
 import { Mountain, Map, Wind, ArrowRight, Users } from 'lucide-react';
 import { WHATSAPP_GROUP_URL } from '@/constants';
+import backgroundImg from '@/assets/background.jpg';
 
 export function Home() {
   return (
     <main className="flex-1">
       {/* Section 1 — WhatsApp Community CTA */}
-      <section className="bg-linear-to-br from-green-600 to-emerald-800 text-white min-h-[calc(100svh-4rem)] px-6 flex items-center justify-center text-center">
-        <div className="max-w-2xl mx-auto py-20">
+      <section
+        className="relative text-white min-h-[calc(100svh-4rem)] px-6 flex items-center justify-center text-center"
+        style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        {/* dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 max-w-2xl mx-auto py-20">
           <div className="flex justify-center mb-8">
             <div className="bg-white/20 text-white rounded-full p-6">
               <Users size={56} />
