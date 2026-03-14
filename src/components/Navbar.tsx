@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Mountain, Map, Info } from 'lucide-react';
-
-const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/';
-const INSTAGRAM_URL = 'https://instagram.com/';
+import { WHATSAPP_GROUP_URL, INSTAGRAM_URL } from '@/constants';
 
 export function Navbar() {
   const linkClass = ({ isActive }: { isActive: boolean }) =>

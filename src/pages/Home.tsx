@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mountain, Map, Wind, ArrowRight, Users } from 'lucide-react';
-
-const WHATSAPP_GROUP_URL = 'https://chat.whatsapp.com/';
+import { WHATSAPP_GROUP_URL } from '@/constants';
 
 export function Home() {
   return (
