@@ -15,11 +15,11 @@ export function Home() {
             </div>
           </div>
           <h1 className="text-5xl font-bold text-white mb-6 leading-tight">
-            Join the Hiking Porto Community
+            Join Hiking Porto
           </h1>
           <p className="text-green-100 text-xl mb-12 max-w-lg mx-auto leading-relaxed">
-            Connect with fellow hikers around Porto. Share routes, organise group hikes, and get
-            trail tips — all in our free WhatsApp group.
+            Connect with the community, share routes, organise group hikes,
+            and get trail tips in our WhatsApp group.
           </p>
           <a
             href={WHATSAPP_GROUP_URL}
